@@ -1,0 +1,430 @@
+html,body{
+    height:100%;
+}
+/*公用部分开始*/
+.abs{
+    position: absolute;
+}
+.rel{
+    position: relative;
+}
+.nextPage,.title{
+    width:100%;
+    position: absolute;
+}
+.title{
+    top:10.5%;
+}
+.title p{
+    font-size:0.7rem;
+    margin-left:1rem;
+}
+.nextPage{
+    bottom:1rem;
+    animation: nextPage 0.5s infinite;
+    z-index: 10;
+}
+.nextPage p{
+    font-size:0.25rem;
+    text-align: center;
+    color: rgba(255, 0255,255,0.6);
+}
+/*公用部分结束*/
+.main{
+    position: relative;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+}
+.swiper-container,.swiper-wrapper,.swiper-slide{
+    width:100%;
+    height:100%;
+}
+.swiper-slide{
+    background: url("../img/bg.png") no-repeat;
+    background-size:cover;
+    color:#fff;
+    font-size:100px;
+}
+/*music*/
+.music{
+    position: absolute;
+    right:0.2rem;
+    top:0.2rem;
+    width:0.5rem;
+    height:0.5rem;
+    z-index:10;
+    background: url("../img/musicBg_01.png") no-repeat;
+    background-size: contain;
+}
+/*.control{*/
+    /*width: 0.5rem;*/
+    /*height: 0.5rem;*/
+    /*background: url("../img/musicBg_01.png") no-repeat;*/
+    /*background-size: contain;*/
+/*}*/
+/*.control-after{*/
+    /*width: 1.5rem;*/
+    /*height: 1.5rem;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*margin-top: -.75rem;*/
+    /*margin-left: -.75rem;*/
+    /*background: url("../img/musicBg_02.gif") no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*-webkit-animation: rotate2d 1.2s linear infinite;*/
+    /*animation: rotate2d 1.2s linear infinite;*/
+    /*z-index: -1;*/
+    /*animation: control-after 3s linear 0s infinite both;*/
+/*}*/
+.music.move{
+    animation: musicMove 2s linear 0s infinite both;
+}
+
+
+/*page1 strat*/
+.slide1{
+    background:#263238;
+}
+/*page2 strat*/
+.slide2 div,.slide2 p{
+    width:100%;
+    text-align: center;
+}
+.slide2 .myPic{
+    width:2rem;
+    height:2rem;
+    border-radius: 50%;
+    margin:2rem auto 0rem;
+    border:0.02rem solid #187F65;
+    background: url("../img/3.png") 0px -28px no-repeat;
+    background-size:cover;
+    animation: myPic .5s linear both;
+}
+.slide2 .myName{
+    font-size: 0.65rem;
+    width: 100%;
+    text-align: center;
+    margin: 0.45rem 0;
+}
+.slide2 .myUniversity{
+    font-size: 0.35rem;
+    margin-bottom:0.6rem;
+}
+.slide2 .myQuote p{
+    font-size: 0.25rem;
+    line-height: 0.35rem;
+}
+
+/*page3 strat*/
+.page3Line{
+    width:2px;
+    height:7rem;
+    top:21%;
+    left:33%;
+    background: #fff;
+}
+.page3Year{
+    width: 0.8rem;
+    top:21%;
+    left:27.4%;
+}
+.page3Year li{
+    font-size: 0.26rem;
+    background: #1DE9B6;
+    width: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom:1.3rem;
+    color:#000;
+}
+.page3School{
+    top: 28%;
+    left: 40%;
+}
+.page3School dl{
+    position: relative;
+    width: 2.5rem;
+    height:1.2rem;
+    background: #fff;
+    margin-bottom: 0.95rem;
+    color: #000;
+    text-align: center;
+    border-left:0.06rem solid #1DE9B6;
+}
+.page3School dl dt{
+    line-height:0.6rem;
+    font-size:0.3rem;
+}
+.page3School dl dd{
+    line-height:0.6rem;
+    font-size:0.25rem;
+}
+.page3School dl dd.triangle{
+    left:-0.23rem;
+    top:10%;
+    width: 0;
+    height: 0;
+    border-top: 0.2rem solid transparent;
+    border-right: 0.25rem solid #1DE9B6;
+    border-bottom: 0.2rem solid transparent;
+}
+
+/*page4 strat*/
+.page4Ico{
+    top:21%;
+    left:13%;
+}
+.page4Ico div{
+    position: relative;
+    width: 0.02rem;
+    height:0.02rem;
+    border-radius: 50%;
+    border:1px solid #1DE9B6;
+    margin-bottom:2.1rem;
+    text-align: center;
+    padding: 0.18rem;
+}
+.page4Ico div span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-0.1rem;
+    margin-left:-0.1rem;
+    display: block;
+    width: 0.2rem;
+    height:0.2rem;
+    border-radius: 50%;
+    background: #1DE9B6;
+}
+.page4Con{
+    top:21.5%;
+    left:23%;
+    padding-right: 0.4rem;
+}
+.page4Con dl{
+    margin-bottom:0.78rem;
+}
+.page4Con dl dt,.page4Con dl dd{
+    font-size:0.25rem;
+    color: rgb(169, 169, 169);
+}
+.page4Con dl dd div.remit{
+    line-height:0.8rem;
+    font-size:0.35rem;
+    color:#fff;
+}
+.page4Con dl dd div.jobContent{
+    line-height:0.35rem;
+}
+
+/*page5 strat*/
+.page5Con{
+    top: 23%;
+    left: 13%;
+    width: 95%;
+}
+.page5Con .areerStyle{
+    font-size:0.38rem;
+    margin-bottom: 0.08rem;
+}
+.page5Con .setbacks{
+    position: relative;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.3rem;
+    color: #000;
+    margin-bottom:0.7rem;
+}
+.page5Con .setbacks .setbacksBg{
+    position: absolute;
+    top:0;
+    width: 80%;
+    height: 100%;
+    background: rgba(255, 0255,255,0.2);
+}
+.page5Con .setbacks p {
+    position: absolute;
+    top:0;
+    background: #1DE9B6;
+    z-index: 1;
+    text-align: right;
+    padding-right: 0.1rem;
+}
+.page5Con .setbacks .setbacksP1{
+    width:70%;
+}
+.page5Con .setbacks .setbacksP2{
+    width:60%;
+}
+.page5Con .setbacks .setbacksP3{
+    width:50%;
+}
+.page5Con .setbacks .setbacksP4{
+    width:40%;
+}
+
+/*page6 strat*/
+.page6Main{
+    top:28%;
+    width:100%;
+}
+.rotateWrap{
+    width:4.38rem;
+    height:5.04rem;
+    margin:0 auto;
+}
+.rotateBg{
+    width:100%;
+    height:100%;
+    background: url("../img/page6_rotateBg.png") no-repeat;
+    background-size: 4.38rem;
+}
+.page6Main .evaluation{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.page6Main .evaluation li{
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.25rem;
+    color: #000;
+    text-align: center;
+    font-size: 0.25rem;
+    border-radius: 50%;
+    background: #1DE9B6;
+}
+.page6Main .evaluation li.lineHeight{
+    line-height:0.5rem;
+}
+.page6Main .evaluation li:nth-child(1){
+    top:0;
+    left:50%;
+    margin-left:-0.45rem;
+    margin-top:-0.45rem;
+}
+.page6Main .evaluation li:nth-child(2){
+    top: 25%;
+    right: 0%;
+    margin-right: -0.45rem;
+    margin-top: -0.45rem;
+}
+.page6Main .evaluation li:nth-child(3){
+    top: 70%;
+    right: 0%;
+    margin-right: -0.35rem;
+    margin-top: -0.35rem;
+}
+.page6Main .evaluation li:nth-child(4){
+    bottom:0;
+    left:50%;
+    margin-left:-0.45rem;
+    margin-bottom:-0.45rem;
+}
+.page6Main .evaluation li:nth-child(5){
+    bottom: 25%;
+    left: 0%;
+    margin-left: -0.45rem;
+    margin-bottom: -0.45rem;
+}
+.page6Main .evaluation li:nth-child(6){
+    top: 25%;
+    left: 0%;
+    margin-left: -0.45rem;
+    margin-top: -0.45rem;
+}
+.page6Main .evaluation li:nth-child(7){
+    top:50%;
+    left:50%;
+    margin-left:-0.45rem;
+    margin-top:-0.45rem;
+}
+
+/*page7 strat*/
+.page7Con{
+    top: 23%;
+    left: 1rem;
+    width: 80%;
+}
+.page7Con p{
+    margin-bottom: 0.3rem;
+    font-size:0.33rem;
+    color:#1DE9B6;
+}
+.page7Con div{
+    font-size:0.35rem;
+    margin-bottom: 0.8rem;
+}
+
+/*page8 strat*/
+.page8Main{
+    width: 60%;
+    background: rgba(255, 0255,255,0.2);
+    padding:0.5rem;
+    font-size:0.3rem;
+    margin:40% auto 0;
+}
+.page8Main li{
+    line-height:1.6rem;
+    padding-left:1rem;
+}
+.page8Main li:nth-child(1){
+    background: url("../img/page8_01.png") left no-repeat;
+    background-size: 0.5rem;
+}
+.page8Main li:nth-child(2){
+    background: url("../img/page8_02.png") left no-repeat;
+    background-size: 0.5rem;
+}
+.page8Main li:nth-child(3){
+    background: url("../img/page8_03.png") left no-repeat;
+    background-size: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+/*animation start*/
+@keyframes nextPage {
+    0%{
+        bottom:1.2rem;
+    }
+    50%{
+        bottom:1rem;
+    }
+    100%{
+        bottom:1.2rem;
+    }
+
+}
+/*animation music*/
+@keyframes musicMove {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+/*animation page2*/
+@keyframes myPic{
+    0%{
+        transform:scale(2);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+
